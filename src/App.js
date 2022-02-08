@@ -5,11 +5,11 @@ import Calculator from "./pages/Calculator";
 import Simulator from "./pages/Simulator";
 import UserChoices from "./pages/UserChoices";
 import UserChoicesBox from "./pages/UserChoicesBox";
+import { HashRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return (
-    <BrowserRouter basename="/ZalkinBoxesSimulator">
-
+    <HashRouter basename="/ZalkinBoxesSimulator">
       <header>
         <Switch>
           <Route path="/items_choice" exact component={Navigation}/>
@@ -29,7 +29,7 @@ function App() {
           <Route path="/simulator" exact component={Simulator}/>
         </Switch>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

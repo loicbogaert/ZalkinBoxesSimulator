@@ -382,13 +382,13 @@ const Home = () => {
     return (
         <div className="home">
                 <div className='splitScreenContainer'>
-                    <a className="splitScreenContainer__link" href='/items_choice_box'>
+                    <a className="splitScreenContainer__link" href='ZalkinBoxesSimulator/#/items_choice_box'>
                         <div className='splitScreenContainer__part1'>
                             <h1>Simulator</h1>
                         </div>
                     </a>
 
-                    <a className="splitScreenContainer__link" href='/items_choice'>
+                    <a className="splitScreenContainer__link" href='ZalkinBoxesSimulator/#/items_choice'>
                         <div className='splitScreenContainer__part2'>
                             <h1>Calculator</h1>
                          </div>

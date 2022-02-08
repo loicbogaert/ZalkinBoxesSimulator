@@ -9,7 +9,7 @@ import { HashRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/ZalkinBoxesSimulator">
       <header>
         <Switch>
           <Route path="/items_choice" exact component={Navigation}/>

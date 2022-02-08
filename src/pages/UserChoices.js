@@ -13,7 +13,7 @@ const UserChoices = () => {
                 <div className="infos_container">
                     <h2 className="infos_container__title">Choose the items you would like to get</h2>
                     <p className="infos_container__text">(This is used tu calculate how worth is your opening)</p>
-                    <a className="infos_container__link" href="/calculator"><button className="button">I made my choice</button></a>
+                    <a className="infos_container__link" href="#/calculator"><button className="button">I made my choice</button></a>
                 </div>
 
                     <h3 className="listTitle">Set 1 : (nom du set)</h3>

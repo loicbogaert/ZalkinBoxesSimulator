@@ -1,0 +1,154 @@
+.home {
+    background-image: url("../BG-poe.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 70%;
+    }
+    &__title{
+        color: white;
+        text-align: center;
+        font-size: 70px;
+        text-shadow: 3px 5px 20px;
+        animation: opac 3.5s ; 
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        visibility: hidden;
+        padding-top: 20px;
+    }
+    &__mirror{
+        color: white;
+        text-align: center;
+        font-size: 70px;
+        text-shadow: 3px 3px 20px;
+        transform-origin: bottom;
+        transform: rotateX(180deg);
+        opacity: 10%;
+        margin-top: -115px;
+        animation: opacMirror 3.5s; 
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        visibility: hidden;
+    }
+    &__navContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__coin1 {
+        transform: rotateZ(-90deg);
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        top: 0;
+        animation: coin1 3s infinite linear;
+    }
+
+    &__coin2 {
+        transform: rotateZ(-90deg);
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        top: 0;
+        animation: coin1 3s infinite linear;
+    }
+
+    &__coinContainer{
+        height: 100%;
+        width: 70px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    &__infoText {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &__text {
+            display: flex;
+            color: white;
+            position: fixed;
+            padding: 40px;
+            bottom: 0;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.splitScreenContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+
+    &__link{
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 23px;
+    }
+    &__part1{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 0px solid white;
+        box-shadow: 0 0 10px rgb(0, 225, 255);
+        &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
+            h1 {
+                color: black;
+            }
+        }
+    }
+    &__part2{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 0px solid white;
+        box-shadow: 0 0 10px rgb(255, 0, 0);
+        &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
+            h1 {
+                color: black;
+            }
+        }
+    }
+    &__separation {
+        border-left: solid 1px black;
+    }
+}
+
+     @media(max-width : 1053px) {
+        .home__mirror {
+            display: none;
+        }
+    }
+
+    @media(max-width : 640px) {
+        .home__coin1 {
+            display: none;
+        }
+
+        .home__coin2 {
+            display: none;
+        }
+    }

@@ -1,0 +1,79 @@
+.container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+}
+
+
+.chestOpening{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15px;
+    &__openIt{
+        color: white;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    &__itemInfo{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    &__itemName{
+        font-size: 40px;
+        color : white;
+        margin-top: 70px;
+    }
+
+    &__itemImg{
+        height: 120px;
+    }
+
+    &__chestImg{
+        height: 200px;
+        position: absolute;
+        margin-top: 40px;
+        &:hover{
+            height: 215px;
+        }
+    }
+    &__reset{
+        margin-top: 260px;
+        position: absolute;
+    }
+}
+
+.chest {
+    height: 200px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.iteminfos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    opacity: 0%;
+    z-index: -5;
+}
+
+.loots {
+    padding: 15px;
+}
+
+.lists_simulator {
+    padding: 10px;
+    margin-top: 150px;
+}

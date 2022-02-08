@@ -2,18 +2,19 @@ import React from 'react';
 
 
 
-const items1 = JSON.parse(localStorage.getItem('item1'))
-const items2 = JSON.parse(localStorage.getItem('item2'))
+
 // Array with all items
 const allItems = [];
 
 if(localStorage.getItem('item1')) {
+    const items1 = JSON.parse(localStorage.getItem('item1'))
     for(let i = 0; i < items1.length; i++) {
         allItems.push(items1[i]);
     }
 }
 
 if(localStorage.getItem('item2')) {
+    const items2 = JSON.parse(localStorage.getItem('item2'))
     for(let i = 0; i < items2.length; i++) {
         allItems.push(items2[i]);
     }

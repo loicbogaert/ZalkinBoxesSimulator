@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ZalkinBoxesSimulator/static/css/main.356d8707.chunk.css",
-    "main.js": "/ZalkinBoxesSimulator/static/js/main.5f220221.chunk.js",
-    "main.js.map": "/ZalkinBoxesSimulator/static/js/main.5f220221.chunk.js.map",
+    "main.js": "/ZalkinBoxesSimulator/static/js/main.8a498a29.chunk.js",
+    "main.js.map": "/ZalkinBoxesSimulator/static/js/main.8a498a29.chunk.js.map",
     "runtime-main.js": "/ZalkinBoxesSimulator/static/js/runtime-main.16e70f5a.js",
     "runtime-main.js.map": "/ZalkinBoxesSimulator/static/js/runtime-main.16e70f5a.js.map",
     "static/js/2.62cdb3ea.chunk.js": "/ZalkinBoxesSimulator/static/js/2.62cdb3ea.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.16e70f5a.js",
     "static/js/2.62cdb3ea.chunk.js",
     "static/css/main.356d8707.chunk.css",
-    "static/js/main.5f220221.chunk.js"
+    "static/js/main.8a498a29.chunk.js"
   ]
 }

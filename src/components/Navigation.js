@@ -5,15 +5,15 @@ const Navigation = () => {
         <div className="navigation">
             <ul className="navigation__ul">
                 <li className="navigation__li">
-                    <a href="/" className="navigation__a"><p className="navigation__p">Home</p></a>
+                    <a href="#/" className="navigation__a"><p className="navigation__p">Home</p></a>
                 </li>
 
                 <li className="navigation__li">
-                    <a href="/items_choice_box" className="navigation__a"><p className="navigation__p">Simulator</p></a>
+                    <a href="#/items_choice_box" className="navigation__a"><p className="navigation__p">Simulator</p></a>
                 </li>
 
                 <li className="navigation__li">
-                    <a href="/items_choice" className="navigation__a"><p className="navigation__p">Calculator</p></a>
+                    <a href="#/items_choice" className="navigation__a"><p className="navigation__p">Calculator</p></a>
                 </li>
             </ul>
         </div>

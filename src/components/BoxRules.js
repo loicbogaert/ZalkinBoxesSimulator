@@ -4,8 +4,8 @@ const items1 = JSON.parse(localStorage.getItem('item1'))
 const items2 = JSON.parse(localStorage.getItem('item2'))
 // Array with all items
 const allItems = [];
-allItems.push(...items1);
-allItems.push(...items2);
+allItems.push([...items1]);
+allItems.push([...items2]);
 
 
 /**Function to get a random number */

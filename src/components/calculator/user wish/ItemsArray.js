@@ -21,6 +21,7 @@ class Array extends React.Component{
             var index = choicesArray.indexOf(this.props);
             choicesArray[index].item.number = choicesArray[index].item.number+=1;
             localStorage.setItem('choicesArray', JSON.stringify(choicesArray))
+            console.log(choicesArray)
         }
         else {
             var index = choicesArray.indexOf(this.props);
@@ -30,8 +31,11 @@ class Array extends React.Component{
     }
 //decrement function
     decrement() {
-        // Display of the number of items on the screen
-        this.setState({ number : this.state.number -1});
+        if(this.state.number > 0) {
+            // Display of the number of items on the screen
+            this.setState({ number : this.state.number -1});
+        }
+
         // Save values in the array + calc
         const itemInfos = this.props;
         

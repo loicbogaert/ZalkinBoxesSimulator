@@ -62,8 +62,6 @@ class Points extends React.Component{
             var myTotal = 0;
             for (let i = 0; i < notWantedTotal.length; i++) {
                  myTotal += notWantedTotal[i];
-                 console.log(myTotal);
-                 console.log(notWantedTotal);
             }
             return myTotal;
         }
@@ -78,7 +76,6 @@ class Points extends React.Component{
            choiceListPrice.push(item[i].item.point * item[i].item.number)
         }
         var totalChoice = choiceListPrice.reduce((a, b)=> a + b, 0);
-        console.log(totalChoice)
 
         const leftToPay = totalChoice - total - notWantedTotal.reduce((a, b)=> a + b, 0);
         console.log(notWantedTotal.reduce((a, b)=> a + b, 0))

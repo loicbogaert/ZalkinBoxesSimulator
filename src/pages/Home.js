@@ -399,13 +399,6 @@ const Home = () => {
             </div>
             <div className="home__container">
                 <h1 className="home__title">Zalkin's boxes simulator</h1>
-                <h2 className="home__mirror">Zalkin's boxes simulator</h2>
-                    <div className="home__infoText">
-                        <p className="home__infoText__text">This app was made to calculate if you are winning or losing coins while opening poe boxes, based on the items you want to get in these boxes.<br/>
-                            There is also a simulator, where you can open boxes for fun. <br/>
-                            That's it, GL with your openings :)
-                        </p>
-                    </div>
             </div>
             <div className="home__coinContainer">
                 <img className="home__coin2" src="./img/coin.png" alt="Poe coin icon"></img>

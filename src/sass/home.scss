@@ -21,8 +21,8 @@
         animation: opac 3.5s ; 
         animation-fill-mode: forwards;
         animation-timing-function: linear;
-        visibility: hidden;
         padding-top: 20px;
+        z-index: 2;
     }
     &__mirror{
         color: white;

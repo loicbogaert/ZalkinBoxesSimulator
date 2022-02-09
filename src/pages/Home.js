@@ -392,7 +392,7 @@ const Home = () => {
                     <a className="splitScreenContainer__link" href='#/items_choice'>
                         <div className='splitScreenContainer__part2'>
                             <h1>Calculator</h1>
-                            <p>Use the calculator during your opening to see if </p>
+                            <p>Use the calculator during your opening to see how worth it is</p>
                         </div>
                     </a>
                 </div>

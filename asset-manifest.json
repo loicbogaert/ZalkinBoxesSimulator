@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ZalkinBoxesSimulator/static/css/main.356d8707.chunk.css",
-    "main.js": "/ZalkinBoxesSimulator/static/js/main.5ee0abd9.chunk.js",
-    "main.js.map": "/ZalkinBoxesSimulator/static/js/main.5ee0abd9.chunk.js.map",
+    "main.css": "/ZalkinBoxesSimulator/static/css/main.6852d6e1.chunk.css",
+    "main.js": "/ZalkinBoxesSimulator/static/js/main.ad165d0f.chunk.js",
+    "main.js.map": "/ZalkinBoxesSimulator/static/js/main.ad165d0f.chunk.js.map",
     "runtime-main.js": "/ZalkinBoxesSimulator/static/js/runtime-main.16e70f5a.js",
     "runtime-main.js.map": "/ZalkinBoxesSimulator/static/js/runtime-main.16e70f5a.js.map",
     "static/js/2.62cdb3ea.chunk.js": "/ZalkinBoxesSimulator/static/js/2.62cdb3ea.chunk.js",
     "static/js/2.62cdb3ea.chunk.js.map": "/ZalkinBoxesSimulator/static/js/2.62cdb3ea.chunk.js.map",
     "index.html": "/ZalkinBoxesSimulator/index.html",
-    "static/css/main.356d8707.chunk.css.map": "/ZalkinBoxesSimulator/static/css/main.356d8707.chunk.css.map",
+    "static/css/main.6852d6e1.chunk.css.map": "/ZalkinBoxesSimulator/static/css/main.6852d6e1.chunk.css.map",
     "static/js/2.62cdb3ea.chunk.js.LICENSE.txt": "/ZalkinBoxesSimulator/static/js/2.62cdb3ea.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/ZalkinBoxesSimulator/static/media/BG-poe.74395071.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.16e70f5a.js",
     "static/js/2.62cdb3ea.chunk.js",
-    "static/css/main.356d8707.chunk.css",
-    "static/js/main.5ee0abd9.chunk.js"
+    "static/css/main.6852d6e1.chunk.css",
+    "static/js/main.ad165d0f.chunk.js"
   ]
 }

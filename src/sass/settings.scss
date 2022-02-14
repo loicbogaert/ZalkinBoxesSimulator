@@ -12,5 +12,60 @@
 .button {
     width: 150px;
     height: 40px;
-    margin: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba($color: #000000, $alpha: 0);
+    border: 1px solid white;
+}
+
+.buttonCalculate:after {
+	content: '';
+	position: absolute;
+    transform: translateX(-108.5px) translateY(-16.5px);
+	width: 8px;
+	height:8px;
+    border-radius: 50%;
+	background: transparent;
+	transition: 500ms;
+}
+
+.buttonCalculate:hover:after {
+	background: rgba($color: #ffffff, $alpha: 1);
+	box-shadow: 0px 0px 5px #ffffff,
+    0px 0px 10px #ffffff,
+    0px 0px 15px #ffffff,
+    0px 0px 20px #ffffff,
+    0px 0px 25px #ffffff,
+    0px 0px 30px #ffffff;
+	animation: spin 1.2s infinite linear;
+}
+
+.buttonChoice:after {
+	content: '';
+	position: absolute;
+    transform: translateX(-108.5px) translateY(-16.5px);
+	width: 8px;
+	height:8px;
+    border-radius: 50%;
+	background: transparent;
+	transition: 500ms;
+}
+
+.buttonChoice:hover:after {
+	background: rgba($color: #ffffff, $alpha: 1);
+	box-shadow: 0px 0px 5px #ffffff,
+    0px 0px 10px #ffffff,
+    0px 0px 15px #ffffff,
+    0px 0px 20px #ffffff,
+    0px 0px 25px #ffffff,
+    0px 0px 30px #ffffff;
+	animation: spin2 1.2s infinite linear;
+}
+
+
+/* div to center button*/
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

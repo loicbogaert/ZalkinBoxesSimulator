@@ -98,6 +98,8 @@ class Points extends React.Component{
 class Child1 extends React.Component{
     render () {
         return(
+
+        <div className='center'>
             <div className="classPointsContainer">
                 <div className='classPointsContainer__flex'>
                     <div className='classPointsContainer__col1'>
@@ -112,8 +114,12 @@ class Child1 extends React.Component{
                         <p className="classPointsContainer__txt">Total cost to get all the items you wanted : {this.props.finalTotal} <img src="img/coin.png" className="classPointsContainer__img"/></p>
                     </div>
                 </div>
-                <button className="button" onClick={this.props.handleClick}>Calculate !</button>
             </div> 
+
+            <button className="buttonCalculate button" onClick={this.props.handleClick}>Calculate !</button>
+
+        </div>
+
         ) 
     }
 }

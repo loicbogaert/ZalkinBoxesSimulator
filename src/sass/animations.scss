@@ -49,3 +49,49 @@
 }
 
 
+/*animations de bouton*/
+
+@keyframes spin{
+    0%{
+      transform: translateX(-108.5px) translateY(-16.5px);
+  }
+
+  35% {
+      transform: translateX(40px) translateY(-16.5px);
+  }  
+
+  50% {
+      transform: translateX(40px) translateY(21.5px);
+  } 
+
+  85% {
+  transform: translateX(-108.5px) translateY(21.5px);
+  }
+
+  100% {
+      transform: translateX(-108.5px) translateY(-16.5px);
+  }
+}
+
+@keyframes spin2{
+  0%{
+    transform: translateX(-127.5px) translateY(-16.5px);
+}
+
+35% {
+    transform: translateX(21px) translateY(-16.5px);
+}  
+
+50% {
+    transform: translateX(21px) translateY(21.5px);
+} 
+
+85% {
+transform: translateX(-127.5px) translateY(21.5px);
+} 
+
+100% {
+    transform: translateX(-127.5px) translateY(-16.5px);
+}
+}
+

@@ -5,6 +5,7 @@
     justify-content: space-around;
     width: 95%;
     margin: 2.5%;
+    margin-bottom: 0;
     margin-top: 50px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0),
      0px 0px 12px rgb(0, 0, 0),
@@ -27,4 +28,8 @@
         flex-direction: row;
         justify-content: space-around;
     }
+}
+
+.center {
+    margin-top: 20vh;
 }

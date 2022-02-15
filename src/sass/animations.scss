@@ -92,6 +92,51 @@ transform: translateX(-127.5px) translateY(21.5px);
 
 100% {
     transform: translateX(-127.5px) translateY(-16.5px);
-}
+  }
 }
 
+
+
+@keyframes spin3{
+    0%{
+      transform: translateX(-93.5px) translateY(-16.5px);
+  }
+  
+  35% {
+      transform: translateX(55px) translateY(-16.5px);
+  }  
+  
+  50% {
+      transform: translateX(55px) translateY(21.5px);
+  } 
+  
+  85% {
+  transform: translateX(-93.5px) translateY(21.5px);
+  } 
+  
+  100% {
+      transform: translateX(-93.5px) translateY(-16.5px);
+  }
+}
+
+@keyframes spin4{
+    0%{
+      transform: translateX(-132px) translateY(-16.5px);
+  }
+  
+  35% {
+      transform: translateX(17px) translateY(-16.5px);
+  }  
+  
+  50% {
+      transform: translateX(17px) translateY(21.5px);
+  } 
+  
+  85% {
+  transform: translateX(-132px) translateY(21.5px);
+  } 
+  
+  100% {
+      transform: translateX(-132px) translateY(-16.5px);
+  }
+}

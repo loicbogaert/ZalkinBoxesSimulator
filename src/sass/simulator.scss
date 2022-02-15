@@ -1,25 +1,35 @@
 .container {
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    text-align: center;
-    height: 100vh;
 }
 
+
+.containerCalcPoints {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.madiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .chestOpening{
     display: flex;
     justify-content: center;
     width: 100%;
     padding-bottom: 15px;
+    margin-top: 3%;
     &__openIt{
         color: white;
         width: 100%;
         height: 50px;
-        position: absolute;
         font-size: 35px;
-        margin-top: 20px;
+        margin-bottom: 5px;
     }
 
     &__itemInfo{
@@ -31,7 +41,6 @@
     &__itemName{
         font-size: 40px;
         color : white;
-        margin-top: 70px;
     }
 
     &__itemImg{
@@ -40,21 +49,14 @@
 
     &__chestImg{
         height: 200px;
-        position: absolute;
-        margin-top: 40px;
         &:hover{
-            height: 215px;
+            text-shadow: 0 0 10px white;
+            text-shadow: 0 0 20px white;
         }
-    }
-    &__reset{
-        margin-top: 260px;
-        position: absolute;
     }
 }
 
 .chest {
-    height: 200px;
-    position: absolute;
     pointer-events: none;
 }
 
@@ -65,7 +67,7 @@
 }
 
 .hidden {
-    opacity: 0%;
+    display: none;
     z-index: -5;
 }
 
@@ -76,4 +78,12 @@
 .lists_simulator {
     padding: 10px;
     margin-top: 150px;
+}
+
+.resetAll {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 340px;
+    left: 20px;
 }

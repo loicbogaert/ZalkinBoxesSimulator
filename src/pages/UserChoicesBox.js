@@ -7,7 +7,6 @@ const UserChoicesBox = () => {
    const items = JSON.parse(localStorage.getItem("item1"));
    const items2 = JSON.parse(localStorage.getItem("item2"));
 
-   console.log(items)
 
     return (
         <div  className="choicesContainer">

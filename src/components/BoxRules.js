@@ -377,6 +377,9 @@ const items2 = [
 localStorage.setItem('item1', JSON.stringify(items1))
 localStorage.setItem('item2', JSON.stringify(items2))
 
+function refresh() {
+    window.location.reload(false);
+}
 
 // Array with all items
 const allItems = [];
@@ -429,6 +432,7 @@ class BoxRules extends React.Component{
     constructor(props){
         super(props);
         this.state = {
+            /**single item opened with box */
            randomItem : "",
            imageUrl : "",
            isActive : false,
@@ -568,9 +572,6 @@ class BoxRules extends React.Component{
         var totalChoice = choiceListPrice.reduce((a, b)=> a + b, 0);
 
         const leftToPay = totalChoice - total - notWantedTotal.reduce((a, b)=> a + b, 0);
-        console.log("total choice : " + totalChoice)
-        console.log("total : " + total)
-        console.log(notWantedTotal)
         this.setState({leftToPay : leftToPay})
 
         /**Final total (total he's paying to get all he wants)*/
@@ -609,24 +610,31 @@ class Child extends React.Component{
         }
 
         return(
-            <div className="container">
+            <div className="containerCalcPoints">
                 <div className="chestOpening">
-                    <h2 className="chestOpening__openIt">Click the box to open it !</h2>
-                    <div className={iteminfos}>
+                    <div className='madiv'>
+                        <h2 className="chestOpening__openIt">Click the box to open it !</h2>
+                        <img className={chest} src="img/poe box.png" onClick={this.props.handleClick} alt="Poe box to open"/>
+                        <div className={iteminfos}>
                         <p className="chestOpening__itemName">{this.props.randomItem}</p>
                         <img className="chestOpening__itemImg" src={this.props.imageUrl} alt={this.props.name}/>
                     </div>
-                    <img className={chest} src="img/poe box.png" onClick={this.props.handleClick} alt="Poe box to open"/>
-                    <button className={resetButton} onClick={this.props.resetBox}>Open another box !</button>
+                        <button className={resetButton}  onClick={this.props.resetBox}>Open another box !</button>
+                    </div>
                 </div>
-
+                <button className="resetAll button buttonReset" onClick={refresh}>Reset</button>
                 <div className="classPointsContainer white lists_simulator">
-                <p className="classPointsContainer__txt">Total boxes used : {this.props.numberOfBoxes}</p>
-                <p className="classPointsContainer__txt">Total price of all items you got : {this.props.total} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
-                <p className="classPointsContainer__txt">Total cost of boxes : {this.props.totalBoxPoints} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
-                <p className="classPointsContainer__txt">(based on items you want) Gains / loss : {this.props.totalWorth} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
-                <p className="classPointsContainer__txt">Left to pay to get all the items you wanted : {this.props.leftToPay} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
-                <p className="classPointsContainer__txt">Total cost to get all the items you wanted : {this.props.finalTotal} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
+                    <div>
+                        <p className="classPointsContainer__txt">Total boxes used : {this.props.numberOfBoxes}</p>
+                        <p className="classPointsContainer__txt">Total price of all items you got : {this.props.total} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
+                        <p className="classPointsContainer__txt">Total cost of boxes : {this.props.totalBoxPoints} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
+                    </div>
+
+                    <div>
+                        <p className="classPointsContainer__txt">(based on items you want) Gains / loss : {this.props.totalWorth} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
+                        <p className="classPointsContainer__txt">Left to pay to get all the items you wanted : {this.props.leftToPay} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
+                        <p className="classPointsContainer__txt">Total cost to get all the items you wanted : {this.props.finalTotal} <img src="img/coin.png" className="classPointsContainer__img" alt="Path of exile coin"/></p>
+                    </div>
                 </div> 
 
                  <div className="lists">
